@@ -7,6 +7,8 @@ import org.junit.Test;
 import com.bellaire.aerbot.systems.GyroSystem;
 import com.bellaire.aerbot.systems.WheelSystem;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 public class StraightDriveTest {
 	
 	private final StraightDriveGyroSystem gyroSystem = new StraightDriveGyroSystem();
@@ -19,7 +21,7 @@ public class StraightDriveTest {
 	private boolean pidEnabled;
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		wheelSystem.setGyro(gyroSystem);
 	}
 
@@ -28,6 +30,16 @@ public class StraightDriveTest {
 		// tests if straight drive stays within 2.2 degrees
 		for(int i = 0; i < 75; i++){
 			wheelSystem.straightDrive(1);
+			updateAngle();
+			updatePID();
+			System.out.println("angle: " + gyroAngle);
+			System.out.println("correctRotate:" + wheelSystem.getCorrectRotate());
+			Assert.assertTrue(Math.abs(gyroAngle) < 2.2);
+		}
+		
+		// start going the other way
+		for(int i = 0; i < 50; i++){
+			wheelSystem.straightDrive(-1);
 			updateAngle();
 			updatePID();
 			System.out.println("angle: " + gyroAngle);
