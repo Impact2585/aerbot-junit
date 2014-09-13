@@ -7,8 +7,6 @@ import org.junit.Test;
 import com.bellaire.aerbot.systems.GyroSystem;
 import com.bellaire.aerbot.systems.WheelSystem;
 
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
 public class StraightDriveTest {
 	
 	private final StraightDriveGyroSystem gyroSystem = new StraightDriveGyroSystem();

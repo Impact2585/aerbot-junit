@@ -13,7 +13,7 @@ public class GyroTest {
 	private double angle;
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		// create subclass of GyroSystem
 		gyroSystem = new GyroSystem(){
 
