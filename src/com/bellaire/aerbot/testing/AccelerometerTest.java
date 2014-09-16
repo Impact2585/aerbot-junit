@@ -36,7 +36,7 @@ public class AccelerometerTest {
 			}
 			
 		});
-		time = 20 / 1000;// 20 ms
+		time = 20 / 1000d;// 20 ms
 	}
 
 	@Test
