@@ -26,24 +26,36 @@ public class StraightDriveTest {
 	@Test
 	public void test() {
 		// tests if straight drive stays within 2.2 degrees
-		for(int i = 0; i < 75; i++){
-			wheelSystem.straightDrive(1);
-			updateAngle();
-			updatePID();
-			System.out.println("angle: " + gyroAngle);
-			System.out.println("correctRotate:" + wheelSystem.getCorrectRotate());
-			Assert.assertTrue(Math.abs(gyroAngle) < 2.2);
+		for(int outer = 0; outer < 5; outer++){
+			// gyroAngle set to random positive or negative multiple of 360 after second outer iteration
+			if(outer > 2){
+				gyroAngle = (int)(Math.random() * 4 + 1) * 360;
+				if(Math.random() < 0.5)
+					gyroAngle *= -1;
+				// reset wheel system straight driving
+				wheelSystem.disableStraightDrivePID();
+				wheelSystem.setCorrectRotate(0);
+				wheelSystem.setStraightDriving(false);
+				System.out.println("changing");
+				printInfo();
+			}
+			for(int i = 0; i < 75; i++){
+				wheelSystem.straightDrive(outer % 2 == 1 ? -1 : 1);// -1 on second outer iteration
+				updateAngle();
+				updatePID();
+				printInfo();
+				Assert.assertTrue(Math.abs(360 - gyroSystem.getHeading()) < 2.2);
+			}
 		}
-		
-		// start going the other way
-		for(int i = 0; i < 50; i++){
-			wheelSystem.straightDrive(-1);
-			updateAngle();
-			updatePID();
-			System.out.println("angle: " + gyroAngle);
-			System.out.println("correctRotate:" + wheelSystem.getCorrectRotate());
-			Assert.assertTrue(Math.abs(gyroAngle) < 2.2);
-		}
+	}
+	
+	/**
+	 * print current angle, heading and correctRotate of the wheel system
+	 */
+	public void printInfo(){
+		System.out.println("angle: " + gyroAngle);
+		System.out.println("heading: " + gyroSystem.getHeading());
+		System.out.println("correctRotate:" + wheelSystem.getCorrectRotate());
 	}
 	
 	/**
@@ -76,6 +88,10 @@ public class StraightDriveTest {
 	
 	private class StraightDriveWheelSystem extends WheelSystem{
 
+		/* (non-Javadoc)
+		 * @see com.bellaire.aerbot.systems.WheelSystem#setGyro(com.bellaire.aerbot.systems.GyroSystem)
+		 */
+		@Override
 		protected void setGyro(GyroSystem gyro) {
 			super.setGyro(gyro);
 		}
@@ -83,6 +99,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#arcadeDrive(double, double)
 		 */
+		@Override
 		public void arcadeDrive(double moveValue, double rotateValue) {
 			currentMovement = moveValue;
 			currentRotation = rotateValue;
@@ -91,6 +108,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#resetStraightDrivePID()
 		 */
+		@Override
 		public void resetStraightDrivePID() {
 
 		}
@@ -98,6 +116,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#straightDriveControllerEnabled()
 		 */
+		@Override
 		public boolean straightDriveControllerEnabled() {
 			return pidEnabled;
 		}
@@ -105,6 +124,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#setStraightDrivePIDSetpoint(double)
 		 */
+		@Override
 		public void setStraightDrivePIDSetpoint(double setpoint) {
 			pidSetpoint = setpoint;
 		}
@@ -112,6 +132,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#enableStraightDrivePID()
 		 */
+		@Override
 		public void enableStraightDrivePID() {
 			pidEnabled = true;
 		}
@@ -119,6 +140,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#disableStraightDrivePID()
 		 */
+		@Override
 		public void disableStraightDrivePID() {
 			pidEnabled = false;
 		}
@@ -126,6 +148,7 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#getCorrectRotate()
 		 */
+		@Override
 		protected double getCorrectRotate() {
 			return super.getCorrectRotate();
 		}
@@ -133,8 +156,25 @@ public class StraightDriveTest {
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.WheelSystem#setCorrectRotate(double)
 		 */
+		@Override
 		protected void setCorrectRotate(double correctRotate) {
 			super.setCorrectRotate(correctRotate);
+		}
+
+		/* (non-Javadoc)
+		 * @see com.bellaire.aerbot.systems.WheelSystem#isStraightDriving()
+		 */
+		@Override
+		protected boolean isStraightDriving() {
+			return super.isStraightDriving();
+		}
+
+		/* (non-Javadoc)
+		 * @see com.bellaire.aerbot.systems.WheelSystem#setStraightDriving(boolean)
+		 */
+		@Override
+		protected void setStraightDriving(boolean straightDriving) {
+			super.setStraightDriving(straightDriving);
 		}
 		
 		
