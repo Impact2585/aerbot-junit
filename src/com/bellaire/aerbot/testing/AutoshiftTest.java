@@ -18,7 +18,7 @@ public class AutoshiftTest {
 	private double yInput;
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		wheelSystem.setAccelerometer(accelerometer);
 		wheelSystem.setTimer(new AutoshiftTimer());
 	}
