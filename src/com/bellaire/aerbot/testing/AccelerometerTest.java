@@ -48,7 +48,7 @@ public class AccelerometerTest {
 			accelerationX = Math.random();
 			double speed = accelerometer.getSpeed();
 			// accelerometer should reset if there is little speed and acceleration otherwise it should get the integral of acceleration
-			expectedSpeed = Math.abs(accelerometer.getAccelerationX()) < 0.15 && Math.abs(speed) < 0.5 ? 0 : expectedSpeed + accelerometer.getAccelerationX() * 9.8 * time;
+			expectedSpeed = Math.abs(accelerometer.getAccelerationX()) < 0.15 && Math.abs(speed) < 0.5 ? 0 : expectedSpeed + accelerometer.getAccelerationX() * AccelerometerSystem.ACCELERATION_DUE_TO_GRAVITY * time;
 			Assert.assertEquals(expectedSpeed, speed, 0);
 		}
 	}
