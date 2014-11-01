@@ -13,8 +13,8 @@ import edu.wpi.first.wpilibj.Timer;
 
 public class WheelSystemTest {
 
-	TestWheelSystem wheelSystem;
-	
+	private TestWheelSystem wheelSystem;
+	private Double driveXvalue, driveYvalue;
 	
 	/**
 	 * Set up unit test
@@ -98,12 +98,25 @@ public class WheelSystemTest {
 			
 		};
 		
+		Assert.assertTrue(wheelSystem.getCurrentLeftY() == 0);
 		wheelSystem.move(input);
-		Assert.assertTrue(wheelSystem.getCurrentLeftY() == -0.5);
+		Assert.assertTrue(wheelSystem.getCurrentLeftY() == -1);
+		Assert.assertTrue(wheelSystem.getCurrentRampY() == -0.5);
+		
+		
+		
 		
 	}
 	
 	private class TestWheelSystem extends WheelSystem{
+
+		/* (non-Javadoc)
+		 * @see com.bellaire.aerbot.systems.WheelSystem#getCurrentRampY()
+		 */
+		@Override
+		protected double getCurrentRampY() {
+			return super.getCurrentRampY();
+		}
 
 		@Override
 		protected GyroSystem getGyro() {
@@ -138,6 +151,15 @@ public class WheelSystemTest {
 		@Override
 		protected boolean isStraightDriving() {
 			return super.isStraightDriving();
+		}
+
+		@Override
+		public void straightDrive(double moveValue) throws NullPointerException {
+			
+		}
+
+		@Override
+		public void automaticGearShift() {
 		}
 
 		@Override
@@ -182,7 +204,7 @@ public class WheelSystemTest {
 
 		@Override
 		public void arcadeDrive(double moveValue, double rotateValue) {
-			super.arcadeDrive(moveValue, rotateValue);
+			//super.arcadeDrive(moveValue, rotateValue);
 		}
 		
 		
