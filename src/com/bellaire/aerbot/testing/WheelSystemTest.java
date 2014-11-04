@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.Timer;
 public class WheelSystemTest {
 
 	private TestWheelSystem wheelSystem;
-	private Double driveXvalue, driveYvalue;
+	private double driveXvalue, driveYvalue;
 	
 	/**
 	 * Set up unit test
@@ -103,6 +103,12 @@ public class WheelSystemTest {
 		Assert.assertTrue(wheelSystem.getCurrentLeftY() == -1);
 		Assert.assertTrue(wheelSystem.getCurrentRampY() == -0.5);
 		
+		Assert.assertTrue(driveXvalue == -0.5);
+		Assert.assertTrue(driveYvalue == 0);
+		
+		wheelSystem.move(input);
+		Assert.assertTrue(wheelSystem.getCurrentLeftY() == -1);
+		Assert.assertTrue(wheelSystem.getCurrentRampY() == -0.75);
 		
 		
 		
@@ -116,6 +122,13 @@ public class WheelSystemTest {
 		@Override
 		protected double getCurrentRampY() {
 			return super.getCurrentRampY();
+		}
+
+		/* (non-Javadoc)
+		 * @see com.bellaire.aerbot.systems.WheelSystem#updateSmartDashboard(com.bellaire.aerbot.input.InputMethod)
+		 */
+		@Override
+		public void updateSmartDashboard(InputMethod input) {
 		}
 
 		@Override
@@ -155,7 +168,7 @@ public class WheelSystemTest {
 
 		@Override
 		public void straightDrive(double moveValue) throws NullPointerException {
-			
+			driveXvalue = moveValue;
 		}
 
 		@Override
@@ -204,7 +217,8 @@ public class WheelSystemTest {
 
 		@Override
 		public void arcadeDrive(double moveValue, double rotateValue) {
-			//super.arcadeDrive(moveValue, rotateValue);
+			driveYvalue = moveValue;
+			driveXvalue = rotateValue;
 		}
 		
 		
