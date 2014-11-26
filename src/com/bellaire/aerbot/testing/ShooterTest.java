@@ -20,7 +20,7 @@ public class ShooterTest {
 		// initialize motor and shooter objects
 		shooter = new TestShooterSystem();
 		motor = new FakeSpeedController();
-		shooter.setShooter(motor);
+		shooter.setSpeedController(motor);
 	}
 
 	@Test
@@ -209,16 +209,16 @@ public class ShooterTest {
 		 * @see com.bellaire.aerbot.systems.ShooterSystem#getShooter()
 		 */
 		@Override
-		protected SpeedController getShooter() {
-			return super.getShooter();
+		protected SpeedController getSpeedController() {
+			return super.getSpeedController();
 		}
 
 		/* (non-Javadoc)
 		 * @see com.bellaire.aerbot.systems.ShooterSystem#setShooter(edu.wpi.first.wpilibj.SpeedController)
 		 */
 		@Override
-		protected void setShooter(SpeedController shooter) {
-			super.setShooter(shooter);
+		protected void setSpeedController(SpeedController shooter) {
+			super.setSpeedController(shooter);
 		}
 		
 	}

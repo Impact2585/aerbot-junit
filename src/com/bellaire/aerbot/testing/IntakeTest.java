@@ -55,7 +55,7 @@ public class IntakeTest {
 		};
 		
 		intake = new TestIntakeSystem();
-		intake.setIntake(motor);
+		intake.setSpeedController(motor);
 		intake.setShooter(shooter);
 	}
 
@@ -219,8 +219,8 @@ public class IntakeTest {
 		 * @see com.bellaire.aerbot.systems.IntakeSystem#setIntake(edu.wpi.first.wpilibj.SpeedController)
 		 */
 		@Override
-		protected void setIntake(SpeedController intake) {
-			super.setIntake(intake);
+		protected void setSpeedController(SpeedController intake) {
+			super.setSpeedController(intake);
 		}
 
 		/* (non-Javadoc)
