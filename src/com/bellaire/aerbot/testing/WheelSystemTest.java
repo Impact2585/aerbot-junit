@@ -31,66 +31,105 @@ public class WheelSystemTest {
 	public void test() {
 		InputMethod input1 = new InputMethod() { // test move value
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftX()
+			 */
 			@Override
 			public double getLeftX() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightX()
+			 */
 			@Override
 			public double getRightX() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftY()
+			 */
 			@Override
 			public double getLeftY() {
 				return 1;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightY()
+			 */
 			@Override
 			public double getRightY() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shift()
+			 */
 			@Override
 			public boolean shift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#catchBall()
+			 */
 			@Override
 			public boolean catchBall() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shoot()
+			 */
 			@Override
 			public boolean shoot() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shooterLift()
+			 */
 			@Override
 			public boolean shooterLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intake()
+			 */
 			@Override
 			public int intake() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeToggle()
+			 */
 			@Override
 			public boolean intakeToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeLift()
+			 */
 			@Override
 			public boolean intakeLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#directionToggle()
+			 */
 			@Override
 			public boolean directionToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#straightDrive()
+			 */
 			@Override
 			public boolean straightDrive() {
 				return true;
@@ -115,66 +154,105 @@ public class WheelSystemTest {
 		
 		InputMethod input2 = new InputMethod() { // test rotate value
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftX()
+			 */
 			@Override
 			public double getLeftX() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightX()
+			 */
 			@Override
 			public double getRightX() {
 				return 1;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftY()
+			 */
 			@Override
 			public double getLeftY() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightY()
+			 */
 			@Override
 			public double getRightY() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shift()
+			 */
 			@Override
 			public boolean shift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#catchBall()
+			 */
 			@Override
 			public boolean catchBall() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shoot()
+			 */
 			@Override
 			public boolean shoot() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shooterLift()
+			 */
 			@Override
 			public boolean shooterLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intake()
+			 */
 			@Override
 			public int intake() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeToggle()
+			 */
 			@Override
 			public boolean intakeToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeLift()
+			 */
 			@Override
 			public boolean intakeLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#directionToggle()
+			 */
 			@Override
 			public boolean directionToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#straightDrive()
+			 */
 			@Override
 			public boolean straightDrive() {
 				return true;
@@ -189,66 +267,105 @@ public class WheelSystemTest {
 		
 		InputMethod input3 = new InputMethod() { // test shift value
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftX()
+			 */
 			@Override
 			public double getLeftX() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightX()
+			 */
 			@Override
 			public double getRightX() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftY()
+			 */
 			@Override
 			public double getLeftY() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightY()
+			 */
 			@Override
 			public double getRightY() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shift()
+			 */
 			@Override
 			public boolean shift() {
 				return true;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#catchBall()
+			 */
 			@Override
 			public boolean catchBall() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shoot()
+			 */
 			@Override
 			public boolean shoot() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shooterLift()
+			 */
 			@Override
 			public boolean shooterLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intake()
+			 */
 			@Override
 			public int intake() {
 				return 0;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeToggle()
+			 */
 			@Override
 			public boolean intakeToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeLift()
+			 */
 			@Override
 			public boolean intakeLift() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#directionToggle()
+			 */
 			@Override
 			public boolean directionToggle() {
 				return false;
 			}
 
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#straightDrive()
+			 */
 			@Override
 			public boolean straightDrive() {
 				return true;
@@ -265,7 +382,117 @@ public class WheelSystemTest {
 		Assert.assertTrue(wheelSystem.getGear() == 1);
 		wheelSystem.move(input3); // if hold the gear back it should change to 0
 		Assert.assertTrue(wheelSystem.getGear() == 0);
-
+		
+		// test direction toggle
+		wheelSystem.move(new InputMethod() {
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#straightDrive()
+			 */
+			@Override
+			public boolean straightDrive() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shooterLift()
+			 */
+			@Override
+			public boolean shooterLift() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shoot()
+			 */
+			@Override
+			public boolean shoot() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#shift()
+			 */
+			@Override
+			public boolean shift() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeToggle()
+			 */
+			@Override
+			public boolean intakeToggle() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intakeLift()
+			 */
+			@Override
+			public boolean intakeLift() {
+				return false;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#intake()
+			 */
+			@Override
+			public int intake() {
+				return 0;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightY()
+			 */
+			@Override
+			public double getRightY() {
+				return 0;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getRightX()
+			 */
+			@Override
+			public double getRightX() {
+				return 0;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftY()
+			 */
+			@Override
+			public double getLeftY() {
+				return 0;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#getLeftX()
+			 */
+			@Override
+			public double getLeftX() {
+				return 0;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#directionToggle()
+			 */
+			@Override
+			public boolean directionToggle() {
+				return true;
+			}
+			
+			/* (non-Javadoc)
+			 * @see com.bellaire.aerbot.input.InputMethod#catchBall()
+			 */
+			@Override
+			public boolean catchBall() {
+				return false;
+			}
+		});
+		Assert.assertTrue(driveYvalue < 0);
+		wheelSystem.move(input1);
+		Assert.assertTrue(driveYvalue > 0);
 	}
 
 	private class TestWheelSystem extends WheelSystem {
