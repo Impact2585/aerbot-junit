@@ -4,14 +4,15 @@ import edu.wpi.first.wpilibj.SpeedController;
 
 public class FakeSpeedController implements SpeedController {
 	
-	private double speed;
+	private double speed, pidOutput;
+	private byte sync;
 
 	/* (non-Javadoc)
 	 * @see edu.wpi.first.wpilibj.PIDOutput#pidWrite(double)
 	 */
 	@Override
 	public void pidWrite(double output) {
-
+		pidOutput = output;
 	}
 
 	/* (non-Javadoc)
@@ -44,6 +45,35 @@ public class FakeSpeedController implements SpeedController {
 	@Override
 	public void set(double speed, byte syncGroup) {
 		set(speed);
+		sync = syncGroup;
+	}
+
+	/**
+	 * @return the pidOutput
+	 */
+	public double getPidOutput() {
+		return pidOutput;
+	}
+
+	/**
+	 * @param pidOutput the pidOutput to set
+	 */
+	protected void setPidOutput(double pidOutput) {
+		this.pidOutput = pidOutput;
+	}
+
+	/**
+	 * @return the sync
+	 */
+	public byte getSync() {
+		return sync;
+	}
+
+	/**
+	 * @param sync the sync to set
+	 */
+	protected void setSync(byte sync) {
+		this.sync = sync;
 	}
 
 }
