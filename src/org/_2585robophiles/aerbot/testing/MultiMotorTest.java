@@ -1,10 +1,9 @@
-package com.bellaire.aerbot.testing;
+package org._2585robophiles.aerbot.testing;
 
+import org._2585robophiles.aerbot.custom.MultiMotor;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.bellaire.aerbot.custom.MultiMotor;
 
 import edu.wpi.first.wpilibj.SpeedController;
 

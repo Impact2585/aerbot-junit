@@ -1,11 +1,10 @@
-package com.bellaire.aerbot.testing;
+package org._2585robophiles.aerbot.testing;
 
+import org._2585robophiles.aerbot.systems.GyroSystem;
+import org._2585robophiles.aerbot.systems.WheelSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.bellaire.aerbot.systems.GyroSystem;
-import com.bellaire.aerbot.systems.WheelSystem;
 
 public class StraightDriveTest {
 	
@@ -78,7 +77,7 @@ public class StraightDriveTest {
 	private class StraightDriveGyroSystem extends GyroSystem{
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.GyroSystem#getAngle()
+		 * @see org._2585robophiles.aerbot.systems.GyroSystem#getAngle()
 		 */
 		public synchronized double getAngle() {
 			return gyroAngle;
@@ -89,7 +88,7 @@ public class StraightDriveTest {
 	private class StraightDriveWheelSystem extends WheelSystem{
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#setGyro(com.bellaire.aerbot.systems.GyroSystem)
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setGyro(org._2585robophiles.aerbot.systems.GyroSystem)
 		 */
 		@Override
 		protected void setGyro(GyroSystem gyro) {
@@ -97,7 +96,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#arcadeDrive(double, double)
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#arcadeDrive(double, double)
 		 */
 		@Override
 		public void arcadeDrive(double moveValue, double rotateValue) {
@@ -106,7 +105,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#resetStraightDrivePID()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#resetStraightDrivePID()
 		 */
 		@Override
 		public void resetStraightDrivePID() {
@@ -114,7 +113,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#straightDriveControllerEnabled()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#straightDriveControllerEnabled()
 		 */
 		@Override
 		public boolean straightDriveControllerEnabled() {
@@ -122,7 +121,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#setStraightDrivePIDSetpoint(double)
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setStraightDrivePIDSetpoint(double)
 		 */
 		@Override
 		public void setStraightDrivePIDSetpoint(double setpoint) {
@@ -130,7 +129,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#enableStraightDrivePID()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#enableStraightDrivePID()
 		 */
 		@Override
 		public void enableStraightDrivePID() {
@@ -138,7 +137,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#disableStraightDrivePID()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#disableStraightDrivePID()
 		 */
 		@Override
 		public void disableStraightDrivePID() {
@@ -146,7 +145,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#getCorrectRotate()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#getCorrectRotate()
 		 */
 		@Override
 		protected double getCorrectRotate() {
@@ -154,7 +153,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#setCorrectRotate(double)
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setCorrectRotate(double)
 		 */
 		@Override
 		protected void setCorrectRotate(double correctRotate) {
@@ -162,7 +161,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#isStraightDriving()
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#isStraightDriving()
 		 */
 		@Override
 		protected boolean isStraightDriving() {
@@ -170,7 +169,7 @@ public class StraightDriveTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see com.bellaire.aerbot.systems.WheelSystem#setStraightDriving(boolean)
+		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setStraightDriving(boolean)
 		 */
 		@Override
 		protected void setStraightDriving(boolean straightDriving) {
