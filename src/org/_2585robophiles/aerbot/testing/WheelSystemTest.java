@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Timer;
 
 public class WheelSystemTest {
@@ -133,6 +134,14 @@ public class WheelSystemTest {
 			public boolean straightDrive() {
 				return true;
 			}
+			
+			/* (non-Javadoc)
+			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 */
+			@Override
+			public Joystick[] joysticks() {
+				return null;
+			}
 
 		};
 
@@ -257,6 +266,14 @@ public class WheelSystemTest {
 				return true;
 			}
 
+			/* (non-Javadoc)
+			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 */
+			@Override
+			public Joystick[] joysticks() {
+				return null;
+			}
+
 		};
 
 		Assert.assertTrue(driveXvalue == 0);
@@ -368,6 +385,14 @@ public class WheelSystemTest {
 			@Override
 			public boolean straightDrive() {
 				return true;
+			}
+
+			/* (non-Javadoc)
+			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 */
+			@Override
+			public Joystick[] joysticks() {
+				return null;
 			}
 
 		};
@@ -487,6 +512,14 @@ public class WheelSystemTest {
 			@Override
 			public boolean catchBall() {
 				return false;
+			}
+
+			/* (non-Javadoc)
+			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 */
+			@Override
+			public Joystick[] joysticks() {
+				return null;
 			}
 		});
 		Assert.assertTrue(driveYvalue < 0);

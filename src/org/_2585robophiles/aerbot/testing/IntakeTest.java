@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.Relay.Value;
 import edu.wpi.first.wpilibj.SpeedController;
@@ -131,6 +132,11 @@ public class IntakeTest {
 			@Override
 			public boolean straightDrive() {
 				return false;
+			}
+
+			@Override
+			public Joystick[] joysticks() {
+				return null;
 			}
 			
 		};
