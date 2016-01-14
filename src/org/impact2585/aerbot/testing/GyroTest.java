@@ -1,6 +1,6 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.systems.GyroSystem;
+import org.impact2585.aerbot.systems.GyroSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,7 +17,7 @@ public class GyroTest {
 		gyroSystem = new GyroSystem(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.GyroSystem#getAngle()
+			 * @see org.impact2585.aerbot.systems.GyroSystem#getAngle()
 			 */
 			@Override
 			public synchronized double getAngle() {

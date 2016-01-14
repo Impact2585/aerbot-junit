@@ -1,8 +1,8 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.input.InputMethod;
-import org._2585robophiles.aerbot.systems.IntakeSystem;
-import org._2585robophiles.aerbot.systems.ShooterSystem;
+import org.impact2585.aerbot.input.InputMethod;
+import org.impact2585.aerbot.systems.IntakeSystem;
+import org.impact2585.aerbot.systems.ShooterSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,7 +29,7 @@ public class IntakeTest {
 		shooter = new ShooterSystem(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.ShooterSystem#open()
+			 * @see org.impact2585.aerbot.systems.ShooterSystem#open()
 			 */
 			@Override
 			public void open() {
@@ -37,7 +37,7 @@ public class IntakeTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.ShooterSystem#close()
+			 * @see org.impact2585.aerbot.systems.ShooterSystem#close()
 			 */
 			@Override
 			public void close() {
@@ -45,7 +45,7 @@ public class IntakeTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.ShooterSystem#setMotor(double)
+			 * @see org.impact2585.aerbot.systems.ShooterSystem#setMotor(double)
 			 */
 			@Override
 			public void setMotor(double speed) {
@@ -197,7 +197,7 @@ public class IntakeTest {
 	private class TestIntakeSystem extends IntakeSystem{
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.IntakeSystem#open()
+		 * @see org.impact2585.aerbot.systems.IntakeSystem#open()
 		 */
 		@Override
 		public void open() {
@@ -205,7 +205,7 @@ public class IntakeTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.IntakeSystem#close()
+		 * @see org.impact2585.aerbot.systems.IntakeSystem#close()
 		 */
 		@Override
 		public void close() {
@@ -213,7 +213,7 @@ public class IntakeTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.IntakeSystem#intakeLiftState()
+		 * @see org.impact2585.aerbot.systems.IntakeSystem#intakeLiftState()
 		 */
 		@Override
 		public Value intakeLiftState() {
@@ -221,7 +221,7 @@ public class IntakeTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.IntakeSystem#setIntake(edu.wpi.first.wpilibj.SpeedController)
+		 * @see org.impact2585.aerbot.systems.IntakeSystem#setIntake(edu.wpi.first.wpilibj.SpeedController)
 		 */
 		@Override
 		protected void setSpeedController(SpeedController intake) {
@@ -229,7 +229,7 @@ public class IntakeTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.IntakeSystem#setShooter(org._2585robophiles.aerbot.systems.ShooterSystem)
+		 * @see org.impact2585.aerbot.systems.IntakeSystem#setShooter(org.impact2585.aerbot.systems.ShooterSystem)
 		 */
 		@Override
 		protected void setShooter(ShooterSystem shooter) {

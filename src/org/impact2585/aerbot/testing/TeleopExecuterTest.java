@@ -1,10 +1,10 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.Environment;
-import org._2585robophiles.aerbot.TeleopExecuter;
-import org._2585robophiles.aerbot.systems.IntakeSystem;
-import org._2585robophiles.aerbot.systems.ShooterSystem;
-import org._2585robophiles.aerbot.systems.WheelSystem;
+import org.impact2585.aerbot.Environment;
+import org.impact2585.aerbot.TeleopExecuter;
+import org.impact2585.aerbot.systems.IntakeSystem;
+import org.impact2585.aerbot.systems.ShooterSystem;
+import org.impact2585.aerbot.systems.WheelSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class TeleopExecuterTest {
 		ShooterSystem shooter = new ShooterSystem(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.ShooterSystem#run()
+			 * @see org.impact2585.aerbot.systems.ShooterSystem#run()
 			 */
 			@Override
 			public void run() {
@@ -32,7 +32,7 @@ public class TeleopExecuterTest {
 		IntakeSystem intake = new IntakeSystem(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.IntakeSystem#run()
+			 * @see org.impact2585.aerbot.systems.IntakeSystem#run()
 			 */
 			@Override
 			public void run() {
@@ -44,7 +44,7 @@ public class TeleopExecuterTest {
 		WheelSystem wheels = new WheelSystem(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.systems.WheelSystem#run()
+			 * @see org.impact2585.aerbot.systems.WheelSystem#run()
 			 */
 			@Override
 			public void run() {
@@ -56,7 +56,7 @@ public class TeleopExecuterTest {
 		environment = new Environment(){
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.Environment#getWheelSystem()
+			 * @see org.impact2585.aerbot.Environment#getWheelSystem()
 			 */
 			@Override
 			public WheelSystem getWheelSystem() {
@@ -64,7 +64,7 @@ public class TeleopExecuterTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.Environment#getShooterSystem()
+			 * @see org.impact2585.aerbot.Environment#getShooterSystem()
 			 */
 			@Override
 			public ShooterSystem getShooterSystem() {
@@ -72,7 +72,7 @@ public class TeleopExecuterTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.Environment#getIntakeSystem()
+			 * @see org.impact2585.aerbot.Environment#getIntakeSystem()
 			 */
 			@Override
 			public IntakeSystem getIntakeSystem() {

@@ -1,11 +1,11 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.input.InputMethod;
-import org._2585robophiles.aerbot.systems.AccelerometerSystem;
-import org._2585robophiles.aerbot.systems.GyroSystem;
-import org._2585robophiles.aerbot.systems.WheelSystem;
 import org.junit.Before;
 import org.junit.Test;
+import org.impact2585.aerbot.input.InputMethod;
+import org.impact2585.aerbot.systems.AccelerometerSystem;
+import org.impact2585.aerbot.systems.GyroSystem;
+import org.impact2585.aerbot.systems.WheelSystem;
 import org.junit.Assert;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -32,7 +32,7 @@ public class WheelSystemTest {
 		InputMethod input1 = new InputMethod() { // test move value
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftX()
 			 */
 			@Override
 			public double getLeftX() {
@@ -40,7 +40,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightX()
 			 */
 			@Override
 			public double getRightX() {
@@ -48,7 +48,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftY()
 			 */
 			@Override
 			public double getLeftY() {
@@ -56,7 +56,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightY()
 			 */
 			@Override
 			public double getRightY() {
@@ -64,7 +64,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shift()
 			 */
 			@Override
 			public boolean shift() {
@@ -72,7 +72,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#catchBall()
+			 * @see org.impact2585.aerbot.input.InputMethod#catchBall()
 			 */
 			@Override
 			public boolean catchBall() {
@@ -80,7 +80,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shoot()
+			 * @see org.impact2585.aerbot.input.InputMethod#shoot()
 			 */
 			@Override
 			public boolean shoot() {
@@ -88,7 +88,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shooterLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shooterLift()
 			 */
 			@Override
 			public boolean shooterLift() {
@@ -96,7 +96,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intake()
+			 * @see org.impact2585.aerbot.input.InputMethod#intake()
 			 */
 			@Override
 			public int intake() {
@@ -104,7 +104,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeToggle()
 			 */
 			@Override
 			public boolean intakeToggle() {
@@ -112,7 +112,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeLift()
 			 */
 			@Override
 			public boolean intakeLift() {
@@ -120,7 +120,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#directionToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#directionToggle()
 			 */
 			@Override
 			public boolean directionToggle() {
@@ -128,7 +128,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#straightDrive()
+			 * @see org.impact2585.aerbot.input.InputMethod#straightDrive()
 			 */
 			@Override
 			public boolean straightDrive() {
@@ -136,7 +136,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 * @see org.impact2585.aerbot.input.InputMethod#joysticks()
 			 */
 			@Override
 			public Joystick[] joysticks() {
@@ -163,7 +163,7 @@ public class WheelSystemTest {
 		InputMethod input2 = new InputMethod() { // test rotate value
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftX()
 			 */
 			@Override
 			public double getLeftX() {
@@ -171,7 +171,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightX()
 			 */
 			@Override
 			public double getRightX() {
@@ -179,7 +179,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftY()
 			 */
 			@Override
 			public double getLeftY() {
@@ -187,7 +187,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightY()
 			 */
 			@Override
 			public double getRightY() {
@@ -195,7 +195,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shift()
 			 */
 			@Override
 			public boolean shift() {
@@ -203,7 +203,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#catchBall()
+			 * @see org.impact2585.aerbot.input.InputMethod#catchBall()
 			 */
 			@Override
 			public boolean catchBall() {
@@ -211,7 +211,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shoot()
+			 * @see org.impact2585.aerbot.input.InputMethod#shoot()
 			 */
 			@Override
 			public boolean shoot() {
@@ -219,7 +219,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shooterLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shooterLift()
 			 */
 			@Override
 			public boolean shooterLift() {
@@ -227,7 +227,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intake()
+			 * @see org.impact2585.aerbot.input.InputMethod#intake()
 			 */
 			@Override
 			public int intake() {
@@ -235,7 +235,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeToggle()
 			 */
 			@Override
 			public boolean intakeToggle() {
@@ -243,7 +243,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeLift()
 			 */
 			@Override
 			public boolean intakeLift() {
@@ -251,7 +251,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#directionToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#directionToggle()
 			 */
 			@Override
 			public boolean directionToggle() {
@@ -259,7 +259,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#straightDrive()
+			 * @see org.impact2585.aerbot.input.InputMethod#straightDrive()
 			 */
 			@Override
 			public boolean straightDrive() {
@@ -267,7 +267,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 * @see org.impact2585.aerbot.input.InputMethod#joysticks()
 			 */
 			@Override
 			public Joystick[] joysticks() {
@@ -284,7 +284,7 @@ public class WheelSystemTest {
 		InputMethod input3 = new InputMethod() { // test shift value
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftX()
 			 */
 			@Override
 			public double getLeftX() {
@@ -292,7 +292,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightX()
 			 */
 			@Override
 			public double getRightX() {
@@ -300,7 +300,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftY()
 			 */
 			@Override
 			public double getLeftY() {
@@ -308,7 +308,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightY()
 			 */
 			@Override
 			public double getRightY() {
@@ -316,7 +316,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shift()
 			 */
 			@Override
 			public boolean shift() {
@@ -324,7 +324,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#catchBall()
+			 * @see org.impact2585.aerbot.input.InputMethod#catchBall()
 			 */
 			@Override
 			public boolean catchBall() {
@@ -332,7 +332,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shoot()
+			 * @see org.impact2585.aerbot.input.InputMethod#shoot()
 			 */
 			@Override
 			public boolean shoot() {
@@ -340,7 +340,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shooterLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shooterLift()
 			 */
 			@Override
 			public boolean shooterLift() {
@@ -348,7 +348,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intake()
+			 * @see org.impact2585.aerbot.input.InputMethod#intake()
 			 */
 			@Override
 			public int intake() {
@@ -356,7 +356,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeToggle()
 			 */
 			@Override
 			public boolean intakeToggle() {
@@ -364,7 +364,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeLift()
 			 */
 			@Override
 			public boolean intakeLift() {
@@ -372,7 +372,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#directionToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#directionToggle()
 			 */
 			@Override
 			public boolean directionToggle() {
@@ -380,7 +380,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#straightDrive()
+			 * @see org.impact2585.aerbot.input.InputMethod#straightDrive()
 			 */
 			@Override
 			public boolean straightDrive() {
@@ -388,7 +388,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 * @see org.impact2585.aerbot.input.InputMethod#joysticks()
 			 */
 			@Override
 			public Joystick[] joysticks() {
@@ -411,7 +411,7 @@ public class WheelSystemTest {
 		wheelSystem.move(new InputMethod() {
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#straightDrive()
+			 * @see org.impact2585.aerbot.input.InputMethod#straightDrive()
 			 */
 			@Override
 			public boolean straightDrive() {
@@ -419,7 +419,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shooterLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shooterLift()
 			 */
 			@Override
 			public boolean shooterLift() {
@@ -427,7 +427,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shoot()
+			 * @see org.impact2585.aerbot.input.InputMethod#shoot()
 			 */
 			@Override
 			public boolean shoot() {
@@ -435,7 +435,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#shift()
+			 * @see org.impact2585.aerbot.input.InputMethod#shift()
 			 */
 			@Override
 			public boolean shift() {
@@ -443,7 +443,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeToggle()
 			 */
 			@Override
 			public boolean intakeToggle() {
@@ -451,7 +451,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intakeLift()
+			 * @see org.impact2585.aerbot.input.InputMethod#intakeLift()
 			 */
 			@Override
 			public boolean intakeLift() {
@@ -459,7 +459,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#intake()
+			 * @see org.impact2585.aerbot.input.InputMethod#intake()
 			 */
 			@Override
 			public int intake() {
@@ -467,7 +467,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightY()
 			 */
 			@Override
 			public double getRightY() {
@@ -475,7 +475,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getRightX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getRightX()
 			 */
 			@Override
 			public double getRightX() {
@@ -483,7 +483,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftY()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftY()
 			 */
 			@Override
 			public double getLeftY() {
@@ -491,7 +491,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#getLeftX()
+			 * @see org.impact2585.aerbot.input.InputMethod#getLeftX()
 			 */
 			@Override
 			public double getLeftX() {
@@ -499,7 +499,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#directionToggle()
+			 * @see org.impact2585.aerbot.input.InputMethod#directionToggle()
 			 */
 			@Override
 			public boolean directionToggle() {
@@ -507,7 +507,7 @@ public class WheelSystemTest {
 			}
 			
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#catchBall()
+			 * @see org.impact2585.aerbot.input.InputMethod#catchBall()
 			 */
 			@Override
 			public boolean catchBall() {
@@ -515,7 +515,7 @@ public class WheelSystemTest {
 			}
 
 			/* (non-Javadoc)
-			 * @see org._2585robophiles.aerbot.input.InputMethod#joysticks()
+			 * @see org.impact2585.aerbot.input.InputMethod#joysticks()
 			 */
 			@Override
 			public Joystick[] joysticks() {
@@ -532,7 +532,7 @@ public class WheelSystemTest {
 		/*
 		 * (non-Javadoc)
 		 * 
-		 * @see org._2585robophiles.aerbot.systems.WheelSystem#getCurrentRampY()
+		 * @see org.impact2585.aerbot.systems.WheelSystem#getCurrentRampY()
 		 */
 		@Override
 		protected double getCurrentRampY() {
@@ -543,7 +543,7 @@ public class WheelSystemTest {
 		 * (non-Javadoc)
 		 * 
 		 * @see
-		 * org._2585robophiles.aerbot.systems.WheelSystem#updateSmartDashboard(com.
+		 * org.impact2585.aerbot.systems.WheelSystem#updateSmartDashboard(com.
 		 * bellaire.aerbot.input.InputMethod)
 		 */
 		@Override

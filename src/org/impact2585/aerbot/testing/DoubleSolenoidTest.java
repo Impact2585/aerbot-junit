@@ -1,6 +1,6 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.custom.DoubleSolenoid;
+import org.impact2585.aerbot.custom.DoubleSolenoid;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

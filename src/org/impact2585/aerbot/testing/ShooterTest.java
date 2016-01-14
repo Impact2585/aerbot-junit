@@ -1,7 +1,7 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.input.InputMethod;
-import org._2585robophiles.aerbot.systems.ShooterSystem;
+import org.impact2585.aerbot.input.InputMethod;
+import org.impact2585.aerbot.systems.ShooterSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -147,7 +147,7 @@ public class ShooterTest {
 	private class TestShooterSystem extends ShooterSystem{
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#open()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#open()
 		 */
 		@Override
 		public void open() {
@@ -155,7 +155,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#close()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#close()
 		 */
 		@Override
 		public void close() {
@@ -163,7 +163,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#getShootStart()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#getShootStart()
 		 */
 		@Override
 		protected long getShootStart() {
@@ -171,7 +171,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#setShootStart(long)
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#setShootStart(long)
 		 */
 		@Override
 		protected void setShootStart(long shootStart) {
@@ -179,7 +179,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#getLastPress()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#getLastPress()
 		 */
 		@Override
 		protected long getLastPress() {
@@ -187,7 +187,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#setLastPress(long)
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#setLastPress(long)
 		 */
 		@Override
 		protected void setLastPress(long lastPress) {
@@ -195,7 +195,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#getCurrent()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#getCurrent()
 		 */
 		@Override
 		protected long getCurrent() {
@@ -203,7 +203,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#setCurrent(long)
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#setCurrent(long)
 		 */
 		@Override
 		protected void setCurrent(long current) {
@@ -211,7 +211,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#getShooter()
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#getShooter()
 		 */
 		@Override
 		protected SpeedController getSpeedController() {
@@ -219,7 +219,7 @@ public class ShooterTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.ShooterSystem#setShooter(edu.wpi.first.wpilibj.SpeedController)
+		 * @see org.impact2585.aerbot.systems.ShooterSystem#setShooter(edu.wpi.first.wpilibj.SpeedController)
 		 */
 		@Override
 		protected void setSpeedController(SpeedController shooter) {

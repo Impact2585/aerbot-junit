@@ -1,7 +1,7 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.systems.AccelerometerSystem;
-import org._2585robophiles.aerbot.systems.WheelSystem;
+import org.impact2585.aerbot.systems.AccelerometerSystem;
+import org.impact2585.aerbot.systems.WheelSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,7 +39,7 @@ public class AutoshiftTest {
 	public class AutoshiftAccelerometerSystem extends AccelerometerSystem{
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.AccelerometerSystem#getSpeed()
+		 * @see org.impact2585.aerbot.systems.AccelerometerSystem#getSpeed()
 		 */
 		@Override
 		public synchronized double getSpeed() {
@@ -51,7 +51,7 @@ public class AutoshiftTest {
 	public class AutoshiftWheelSystem extends WheelSystem{
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setAccelerometer(org._2585robophiles.aerbot.systems.AccelerometerSystem)
+		 * @see org.impact2585.aerbot.systems.WheelSystem#setAccelerometer(org.impact2585.aerbot.systems.AccelerometerSystem)
 		 */
 		@Override
 		protected void setAccelerometer(AccelerometerSystem accelerometer) {
@@ -69,7 +69,7 @@ public class AutoshiftTest {
 		}
 		
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setCurrentLeftY(double)
+		 * @see org.impact2585.aerbot.systems.WheelSystem#setCurrentLeftY(double)
 		 */
 		@Override
 		protected void setCurrentLeftY(double currentLeftY) {
@@ -77,7 +77,7 @@ public class AutoshiftTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.WheelSystem#setTimer(edu.wpi.first.wpilibj.Timer)
+		 * @see org.impact2585.aerbot.systems.WheelSystem#setTimer(edu.wpi.first.wpilibj.Timer)
 		 */
 		@Override
 		protected void setTimer(Timer timer) {

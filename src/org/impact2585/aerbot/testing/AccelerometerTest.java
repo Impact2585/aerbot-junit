@@ -1,6 +1,6 @@
-package org._2585robophiles.aerbot.testing;
+package org.impact2585.aerbot.testing;
 
-import org._2585robophiles.aerbot.systems.AccelerometerSystem;
+import org.impact2585.aerbot.systems.AccelerometerSystem;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -58,7 +58,7 @@ public class AccelerometerTest {
 	private class TestAccelerometerSystem extends AccelerometerSystem{
 		
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.AccelerometerSystem#getAccelerationX()
+		 * @see org.impact2585.aerbot.systems.AccelerometerSystem#getAccelerationX()
 		 */
 		@Override
 		public double getAccelerationX() {
@@ -66,7 +66,7 @@ public class AccelerometerTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.AccelerometerSystem#getTimer()
+		 * @see org.impact2585.aerbot.systems.AccelerometerSystem#getTimer()
 		 */
 		@Override
 		protected Timer getTimer() {
@@ -74,7 +74,7 @@ public class AccelerometerTest {
 		}
 
 		/* (non-Javadoc)
-		 * @see org._2585robophiles.aerbot.systems.AccelerometerSystem#setTimer(edu.wpi.first.wpilibj.Timer)
+		 * @see org.impact2585.aerbot.systems.AccelerometerSystem#setTimer(edu.wpi.first.wpilibj.Timer)
 		 */
 		@Override
 		protected void setTimer(Timer timer) {
